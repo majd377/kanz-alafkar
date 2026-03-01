@@ -291,7 +291,7 @@
 // ====================================================
 // GLOBALS
 // ====================================================
-var GEMINI_KEY   = 'AIzaSyBy7T-QWv5tsrPqFCDd-6GHloFRs-7xA-U';
+var GEMINI_KEY   = 'AIzaSyC1qvJZZwYlqHZTsSOlpK0UeZPe4p0AgT4';
 var FB_CONFIG    = {
   apiKey:            "AIzaSyBfBVw32bCQnIE_xLgZgsjUwhkBnLPHvOI",
   authDomain:        "box0-238b3.firebaseapp.com",
@@ -448,7 +448,7 @@ async function generateIdea() {
 
   try {
     var res = await fetch(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=' + GEMINI_KEY,
+      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + GEMINI_KEY,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
